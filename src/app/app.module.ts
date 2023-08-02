@@ -25,9 +25,4 @@ import { createCustomElement } from '@angular/elements';
 export class AppModule { 
   constructor(private injector: Injector) { }
 
-  ngDoBootstrap() {
-    const wrapperElement = createCustomElement(ChatbotWrapperComponent, { injector: this.injector });
-    // Define a unique name for your custom element (e.g., my-chatbot-wrapper)
-    customElements.define('my-chatbot-wrapper', wrapperElement);
-  }
 }
