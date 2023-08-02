@@ -12,8 +12,9 @@ export class ChatbotComponent {
     sendMessage() {
       if (this.userInput.trim() !== '') {
         this.chatMessages.push(`You: ${this.userInput}`);
-        // Add chatbot response logic here
-        this.userInput = '';
+        console.log("user input" ,this.userInput)
+        this.userInput = 'How can i help you ?';
+        console.log("my response" ,this.userInput)
       }
     }
 }
